@@ -1,0 +1,61 @@
+TABLE: EMPLOYEES
+
+emp_id      name        dept_id
+1           john        10
+2           alice       20
+3           mark        10
+4           sarah       30
+5           david        NULL
+=================================
+
+TABLE: DEPARTMENTS
+
+dept_id      name      
+10          HR        
+20          IT       
+30          FINANCE        
+40                 
+=================================
+
+-rull of thumb - starts from what you need, like from employees
+
+
+
+
+
+A. INNER FUNCTION  - returns only row where there are matching value in both tables
+    scenario - find employees who are assigned to an existing department
+
+    SELECT e.name, d.name from employees e
+    INNER JOIN department d
+    USING (dept_id);
+
+
+B. LEFT JOIN - return all rows from the left table (employees) matching rows from the right table if not match, null is returned to right table
+    scenario - show all employees and their department names if available
+    
+    SELECT e.name , d.name from employees e 
+    LEFT JOIN department d
+    USING (dept_id);
+
+
+C. RIGHT JOIN - return all rows from the RIGHT table (department) matching rows from the lef table if not match, null is returned to lef table
+    scenario - show all departments and their employyes names if available
+    
+    SELECT e.name , d.name from employees e 
+    RIGHT JOIN department d
+    USING (dept_id)
+    where name = "";
+    ;
+
+
+D. FULL OUTER JOIN - returns all rows from both table
+    scenario - show all employees and all departments even if no matching value
+
+    NOT SUPPORTED IN MYSQL WE OFTEN USE UNION
+
+
+E. CROSS JOIN - returns the cartesian product -> every row from one table combined
+    scenario - generate all possible combination of employees and department
+
+    SELECT e.name , d.name from employees e CROSS JOIN department d

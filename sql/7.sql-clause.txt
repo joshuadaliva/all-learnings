@@ -1,0 +1,40 @@
+
+
+
+A. DISTINT - GET UNIQUE VALUES
+    -   SELECT DISTINCT contact_name FROM customers;
+
+B. WHERE 
+    -   SELECT * FROM customer_name WHERE id = 1;
+    -   SELECT * FROM customer_name WHERE customer_name in ("person");
+    -   SELECT * FROM customer_name WHERE customer_name in (select customer_name from customers);
+
+C. ORDER BY - SORT ROWS
+    - 	SELECT * FROM customers ORDER BY customer_name ASC/DESC;
+
+D. GROUP BY  - group rows by COLUMN (USUALLY COMBINED WITH AGGREGATE FUNCTION)
+    - it select the unique customer_name then it counts the total customer_name then it will show into that row
+
+
+    sample table for group by:
+    ===============
+    name    country
+    alice   usa
+    bob     usa
+    carol   canada
+    dave    canada
+    ==============
+    -   select country , count(country) as country_count from travel group by country;
+    
+    ===result=====
+    country    country_count
+    usa        2
+    canada     2
+
+    -group by returns unique column then counts all values with the same value
+
+
+
+
+E. HAVING - FILTER GROUPS AFTER GROUP BY
+    - SELECT contact_name, count(contact_name) as all_contact from customers GROUP by contact_name having age > 17;

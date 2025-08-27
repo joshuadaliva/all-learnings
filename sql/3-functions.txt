@@ -1,0 +1,53 @@
+
+
+==== AGGREGATE FUNCTION
+A. COUNT() 
+    - SELECT COUNT (*) FROM STUDENTS;
+B. SUM() 
+    - SELECT SUM (PRICE) FROM PRODUCTS;
+C. AVG() 
+    - SELECT AVG (PRICE) FROM PRODUCTS;
+D. MIN() 
+    - SELECT MIN (BIRTH_DATE) FROM PERSON;
+E. MAX() 
+    - SELECT MAX (BIRTH_DATE) FROM PERSON;
+
+
+====STRING FUNCTION
+A. CONCAT
+    - SELECT CONCAT (first_name, last_name) FROM PERSON;
+B. UPPER
+    - SELECT UPPER(first_name) FROM PERSON;
+C. LOWER
+    -SELECT LOWER(first_name) FROM PERSON;
+D. LENGTH
+    -SELECT LENGTH(first_name) FROM PERSON;
+E. TRIM
+    -SELECT TRIM(first_name) FROM PERSON;
+
+
+====DATE & TIME FUNCTION
+A. NOW() 
+    - SELECT NOW();
+B. CURRENT_TIMESTAMP
+    - SELECT CURRENT_TIMESTAMP
+C. CURDATE() - gets only date
+    - SELECT CURDATE()
+D. CURTIME() 
+    - SELECT CURTIME()
+E. DATE() - get date and time from datetime
+    - SELECT DATE(created_at) FROM PERSON;
+
+
+
+====CONDITIONAL
+A. IF(CONDITION, value_if_true, value_if_false)
+    - SELECT IF(age >= 18, "ADULT", "NOT AN ADULT") AS  SPECIFY_AGE FROM students;
+B. CASE condition - multiple condition
+    - select name, age, 
+        CASE
+	        WHEN age >= 18 THEN "ADULT"
+	        WHEN age <= 17 THEN "YOUNG"
+	        ELSE "NOT A VALID AGE"
+        END AS specify_age
+        from students

@@ -1,0 +1,168 @@
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* shadow */
+
+
+/* text-shadow : horizontal vertical shadow color, allow multiple color */
+/* text-shadow: 10px 10px 5px red; */
+.text-shadow{
+    text-shadow: 10px 10px 5px red;
+    text-align: center;
+}
+
+/* box-shadow : horizontal vertical shadow color, allow multiple color */
+/* box-shadow : 20px 20px 5px lightblue */
+.box-shadow{
+    box-shadow: 20px 20px 5px lightblue;
+}
+
+
+
+
+
+/* transform */
+
+
+/* positive X - RIGHT */
+/* negative X - LEFT */
+/* positive Y - BOTTOM */
+/* negative Y - TOP */
+
+/* transform-origin: value;           fixed the animation at the value and the other will transition */
+
+.translate{
+    /* use to move element from its current position (horizontal x, vertical y) */
+    /* good for sliding menus, modals, animations */
+    transform: translate(10px); /* to right */
+    transform: translate(10px, 10px); /* move to right ,move to bottom  */
+    transform: translateX(0%); /* 0 movement */
+    transform: translateX(100%); /* to right base on its width */
+    transform: translateX(-100%); /* to left base on its width */
+    transform: translateX(200px); /*move to right  */
+    transform: translateY(10px); /*move to bottom */
+    
+}
+.rotate{
+    /* use to rotate element */
+    /* good for buttons, icons, cards , flipping effect */
+    transition: transform 5s;
+    transform: rotate(20deg);  /* rotate clock wise */
+    transform: rotateX(300deg); /* top to bottom */
+    transform: rotateY(200deg); /* left to right */
+}
+.scale{
+    /* increases or decrease an element */
+    /* good for hover effects. modals, zoom in */
+    transition-duration: 2s;
+    transform: scale(2); /* times 2 of width and height */
+    transform: scale(1); /* 100% of its width or no scale*/
+    transform: scale(0); /* no width and height*/
+    transform: scale(0.5); /* half width and height*/
+    transform: scaleX(2); /* times 2 width */
+    transform: scaleY(2); /* times 2 height */
+}
+.skew{
+    /* moves in a slant */
+    transition: transform 10s;
+    transform: skewX(50deg);
+}
+
+
+
+
+/* transition */
+.transition{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    /* shorthand for property, duration, timing, delay  */
+    transition: width 2s ease-in-out 1s;
+}
+.transition:hover{
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+
+/* animation */
+@keyframes transform {
+    from {
+        transform: translateX(200px);
+    }
+    to{
+        transform: translateY(300px);
+    }
+}
+
+@keyframes translate {
+    0%{
+        transform: translate(10px);
+    }
+    20%{
+        transform: translate(50px);
+    }
+    30%{
+        transform: translate(100px);
+    }
+    50%{
+        transform: translateY(150px);
+    }
+    80%{
+        transform: translateY(200px);
+    }
+    100%{
+        transform: translateY(250px);
+    }
+}
+
+.animation{
+    animation-name: translate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+
+
+
+/* by the default */
+.btn{
+    display: none;
+    cursor: pointer;
+    padding: 5px;
+    width: 30px;  
+}
+
+/* if the screen reaches to 768px and lower  it will hide the ul or nav and the button shows  */
+
+@media screen and (max-width: 768px) {
+    .btn{
+        display: block;
+    }
+    ul{
+        display: none;
+    }
+    
+}
+
+
+/* flex-basis: 200px; sets the min width */
+/* flex-grow: 1; distribute the remaining width to the child container */
+/* flex-shrink: 1; allows to shrink an element */

@@ -1,0 +1,33 @@
+
+
+A. UNION - combines unique rows from two select statement / removes duplicate automatically
+    scenario - finds all department whether they come from employess records or department table
+
+    SELECT dept_id FROM department
+    UNION
+    SELECT dept_id from employees;
+
+B. UNION ALL - similar to union , but keeps duplicates
+    scenario - list all department id from both employees and departments
+    
+    SELECT dept_id FROM department
+    UNION ALL
+    SELECT dept_id from employees;
+
+C. INTERSECT - returns only rows that exist in both select statement
+    scenario - find department that exist in the department and have at least ine in employees
+    
+    SELECT dept_id FROM department
+    INTERSECT
+    SELECT dept_id from employees;
+
+
+D. EXCEPT - returns row from the first select that are not in the second select
+    scenario - find department that employees belongs to, but chich dont exist in the department table 
+
+
+
+===== combining join and set operators
+    - we combine them together when you need to filter or select data across multiple table (join)
+    -
+    

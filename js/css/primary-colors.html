@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Color Buttons Set</title>
+  <style>
+    :root {
+      --gray:   #6b7280;
+      --indigo: #6366f1;
+      --blue:   #3b82f6;
+      --red:    #ef4444;
+      --green:  #22c55e;
+      --purple: #a855f7;
+      --yellow: #eab308;
+      --pink:   #ec4899;
+      --dark: #0d121d;
+      --bgdark: #101828;
+      --cardark: #233042;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: #f9fafb;
+      color: #111827;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1.25rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn svg {
+      width: 1rem;
+      height: 1rem;
+      stroke-width: 2;
+    }
+
+    /* Solid Styles */
+    .solid.gray    { background: var(--gray);   color: white; border: none; }
+    .solid.indigo  { background: var(--indigo); color: white; border: none; }
+    .solid.blue    { background: var(--blue);   color: white; border: none; }
+    .solid.red     { background: var(--red);    color: white; border: none; }
+    .solid.green   { background: var(--green);  color: white; border: none; }
+    .solid.purple  { background: var(--purple); color: white; border: none; }
+    .solid.yellow  { background: var(--yellow); color: #111;   border: none; }
+    .solid.pink    { background: var(--pink);   color: white; border: none; }
+
+    .solid:hover {
+      filter: brightness(0.9);
+    }
+
+    /* Outline Styles */
+    .outline {
+      background: transparent;
+      border: 2px solid;
+    }
+
+    .outline.gray    { border-color: var(--gray);   color: var(--gray); }
+    .outline.indigo  { border-color: var(--indigo); color: var(--indigo); }
+    .outline.blue    { border-color: var(--blue);   color: var(--blue); }
+    .outline.red     { border-color: var(--red);    color: var(--red); }
+    .outline.green   { border-color: var(--green);  color: var(--green); }
+    .outline.purple  { border-color: var(--purple); color: var(--purple); }
+    .outline.yellow  { border-color: var(--yellow); color: var(--yellow); }
+    .outline.pink    { border-color: var(--pink);   color: var(--pink); }
+
+    .outline:hover {
+      background: currentColor;
+      color: white;
+    }
+
+    /* Dark Mode */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #111827;
+        color: white;
+      }
+
+      .solid.yellow {
+        color: #000;
+      }
+
+      .outline:hover {
+        color: black;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🔵 Solid Buttons with Icons</h2>
+  <div class="row">
+    <button class="btn solid gray">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Gray
+    </button>
+    <button class="btn solid indigo">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Indigo
+    </button>
+    <button class="btn solid blue">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 12H9m0 0l3 3m-3-3l3-3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Blue
+    </button>
+    <button class="btn solid red">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Red
+    </button>
+    <button class="btn solid green">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Green
+    </button>
+    <button class="btn solid purple">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Purple
+    </button>
+    <button class="btn solid yellow">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Yellow
+    </button>
+    <button class="btn solid pink">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Pink
+    </button>
+  </div>
+
+  <h2>⚪ Outline Buttons with Icons</h2>
+  <div class="row">
+    <button class="btn outline gray">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Gray
+    </button>
+    <button class="btn outline indigo">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Indigo
+    </button>
+    <button class="btn outline blue">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M15 12H9m0 0l3 3m-3-3l3-3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Blue
+    </button>
+    <button class="btn outline red">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Red
+    </button>
+    <button class="btn outline green">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Green
+    </button>
+    <button class="btn outline purple">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Purple
+    </button>
+    <button class="btn outline yellow">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Yellow
+    </button>
+    <button class="btn outline pink">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Pink
+    </button>
+  </div>
+
+</body>
+</html>

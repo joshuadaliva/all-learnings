@@ -1,0 +1,18 @@
+create table customers(
+	customer_id INT PRIMARY KEY AUTO_INCREMENT,
+    customer_name varchar(250) not null,
+    contact_name varchar(250) not null DEFAULT "person",
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+A. SELECTING ALL customers
+    -SELECT * FROM customers;
+
+B. SELECTING SPECIFIC COLUMN
+    -SELECT customer_name, contact_name from customers;
+
+C. SELECT SPECIFIC COLUMN USING .
+    -SELECT customer.customer_name, customer.contact_name from customers;
+
+D. SELECT SPECIFIC COLUMN THEN APPLY A FUNCTION
+    -SELECT sum(paid) FROM customers;

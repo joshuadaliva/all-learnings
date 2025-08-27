@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            max-width: 300px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        button{
+            padding: 8px;
+            margin-top: 10px;
+        }
+        input{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #ddd;">
+    
+   <div style="background-color: white; ">
+        <h1>Temperature Conversion</h1>
+        <input type="number" name="temp" id="temp" value="0">
+        <input type="radio" name="toConvert" id="toFahrenheit">
+        <label for="toFahrenheit">Celcius to Fahrenheit</label>
+        <input type="radio" name="toConvert" id="toCelcius">
+        <label for="toCelcius">Celcius to Celcius</label>
+        <button type="submit" id="convert">Convert</button>
+        <p id="result"></p>
+   </div>
+    
+
+  
+
+
+    <script src="index.js"></script>
+</body>
+</html>

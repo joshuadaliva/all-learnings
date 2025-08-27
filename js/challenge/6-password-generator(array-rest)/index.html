@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            max-width: 300px;
+            height: auto;
+            text-align: center;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        button{
+            padding: 8px;
+            margin-top: 10px;
+        }
+        input{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    
+   
+
+    <div>
+        <label for="passLength">Enter the length of password:</label>
+        <input type="number" name="passLength" id="passLength"><br>
+        <input type="radio" name="" id="lower">
+        <label for="lower">lower</label><br>
+        <input type="radio" name="" id="upper">
+        <label for="upper">upper</label><br>
+        <input type="radio" name="" id="numbers">
+        <label for="numbers">numbers</label><br>
+        <input type="radio" name="" id="symbols">
+        <label for="symbols">symbols</label><br>
+        <button id="generatePassword">generate password</button>
+        <p id="generatedPassword"></p>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

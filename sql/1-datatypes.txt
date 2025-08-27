@@ -1,0 +1,44 @@
+
+
+
+A. NUMERIC DATA TYPES
+    INT        -          WHOLE NUMBERS                              - 123
+    TINYTINT   -          VERY SMALL INT                             - 1 OR 0
+    DECIMAL    -          DECIMAL                                    - DECIMAL(10,2) -> 123456.67
+
+
+B. STRING
+    VARCHAR(N)     -       CONTAINS TEXT WITH LEGNTH                 -SOME TEXT
+    CHAR(N)        -       SMALL NUMBER OF STRING                    -JOSH
+    ENUM(n,n)      -       TAKES MULTIPLE NUMBER OF STRING           -ENUM("MALE", "FEMALE") return "" if not visible
+
+
+C. DATE AND TIME
+    DATE        -       ONLY DATE                                    -2025-08-27
+    DATETIME    -       ONLY DATE AND TIME                           -2025-08-27 12:13:00 (recommended for  storing future and old date)
+    TIMESTAMP   -       STORES DATE AND TIME AUTO UPDATE             -2025-08-27 12:13:00 (recommended for inserting and updating)
+    TIME        -       STORES ONLY TIME                             -12:00:00
+    YEAR        -       STORES ONLY YEAR                             -2025
+
+D. BINARY
+    BLOB        -       BINARY LARGE OBJECT                          -
+
+E. BOOLEAN
+    BOOLEAN     -       STORES TRUR OR FALSE                         1 OR 0 
+
+
+
+
+
+sample table creation
+
+create table students(
+	student_id INT PRIMARY KEY AUTO_INCREMENT,
+    full_name VARCHAR(250) NOT NULL,
+    gender ENUM("MALE","FEMALE") NOT NULL,
+    birth_date DATE,
+    is_active BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+

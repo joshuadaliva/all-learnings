@@ -1,0 +1,60 @@
+body{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.left, .right{
+    background-color: rgb(235, 174, 43);
+    height: 100%;
+    width: 100%;
+    border: 1px solid grey;
+    position: relative;
+    transition: transform 5s ease;
+    overflow: hidden;
+}
+.insert-key1{
+    width: 10px;
+    height: 10px;
+    background-color:rgb(235, 174, 43);
+    border-radius: 50%;
+}
+.open-left{
+    transform-origin: left;
+    transform: scaleX(0);
+}
+.open-right{
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+.handle1, .handle2{
+    clip-path: circle(50%);
+    width: 30px;
+    height: 30px;
+    background-color: brown;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.handle1{
+    top: 50%;
+    right: 5px;
+}
+.handle2{
+    top: 50%;
+    left: 5px;
+}
+
+.video{
+    position: absolute;
+    z-index: -1;
+}

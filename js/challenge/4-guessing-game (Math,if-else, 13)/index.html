@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            max-width: 300px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        button{
+            padding: 8px;
+            margin-top: 10px;
+        }
+        input{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    
+   
+
+    <div>
+        <h1 id="randomNumber">0</h1> 
+        <label for="guessInput">guess the number from 1 - 100</label><br>
+        <input type="number" name="guessInput" id="guessInput">
+        <button id="check">guess</button>
+
+
+        <p id="result"></p>
+        <p id="lives"></p>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

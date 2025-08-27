@@ -1,0 +1,20 @@
+
+
+//creating table
+create table customers(
+	customer_id INT PRIMARY KEY AUTO_INCREMENT,
+    customer_name varchar(250) not null,
+    contact_name varchar(250) not null DEFAULT "person",
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+
+
+A. DESC TABLE - SHOWING THE TABLE STRUCTURE
+    - DESC customers;
+
+B. addig a column
+    - ALTER TABLE customers ADD address varchar(250);
+    
+C. deleting a column
+    -ALTER TABLE customers DROP COLUMN address;

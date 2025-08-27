@@ -1,0 +1,38 @@
+
+
+A. PRIMARY KEY
+    - Is a column that uniquely identifies each row
+    - must be unique and not null
+    - one primary KEY
+    -parent table
+
+    create table users(
+	    user_id int primary key AUTO_INCREMENT
+    );
+
+
+b. FOREIGN KEY 
+    - is a column in one table that references the primary key of another table 
+    - ensures that a value in the child
+    - child table
+    
+    
+    create table students(
+        student_id int primary key AUTO_INCREMENT,
+        student_name varchar(50) not null 
+    )
+
+    create table enrollments(
+        enrollment_id int primary key AUTO_INCREMENT,
+        student_id int not null,
+        FOREIGN KEY (student_id) REFERENCES students(student_id)
+    )
+
+C. FOREIGN KEY CONSTRAINT
+    - on DELETE CASCADE - deletes child row automatically / deleting a student deletes enrollment
+    - on DELETE SET NULL - set to null / tab;e remain but lose dept info
+    - on DELETE RESTRICT - prevents delete if children exist
+
+    example:
+        - parent column is deleted now the child table using the fk to parent will also be deleted
+    

@@ -1,0 +1,19 @@
+
+
+
+A. COMMON ERROR CODE IN MYSQL
+
+1062    -       23000       -       duplicate entry                     - inserting a the same value in unique column
+1045    -       28000       -       access denied                       - wrong username and pass when connecting to database
+1146    -       42S02       -       table doesnt exist                  - querying to table not created
+1451    -       23000       -       cannot delete or update parent row  - trying to delete a row referenced by a foreign key 
+1452    -       23000       -       cannot add or update child row      - foreign key constraints fails
+1064    -       42000       -       syntax ERROR                        - typo or invalid sql
+1054    -       42S22       -       unknown column                      - referring to a column that doest exist
+1049    -       42000       -       unknown database                    - referring to a database that doest exist
+2002    -       HY000       -       cannot connect to mysql server      - server is down or wrong host
+2006    -       HY000       -       MYSQL server has gone away          - connection timeout
+1216    -       23000       -       cannot add or update child row      - foreign key constraints violation insert/update
+1217    -       23000       -       cannot delete parent row            -foreign key constraints violation delete
+1060    -       42S21       -       duplicate column name               -trying to add column that already exist
+

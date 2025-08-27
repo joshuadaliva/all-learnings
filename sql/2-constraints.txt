@@ -1,0 +1,14 @@
+
+
+A. NOT NULL - ensures that column cannot have null values (     NOT NULL    )
+B. UNIQUE   - ensures that all values in a column are unique (  UNIQUE  )
+C. PRIMARY KEY - combines NOT NULL + UNIQUE and always (    PRIMARY KEY     )
+D. FOREIGN KEY - creates a relationship between two tables (    FOREIGN KEY(id) REFERENCES users(id)    )
+E. CHECK  - ensures column value meets a specific condition (   CHECK(price >= 0)   )
+F. DEFAULT  - assigns a default value (     DEFAULT CURRENT_TIMESTAMP    )
+G. AUTO_INCREMENT  - increment int by 1     (AUTO_INCREMENT)
+
+
+ALTERING CONSTRAINTS
+A . alter table users add constraints price check (price >= 20)
+B. alter table users drop constraints price;

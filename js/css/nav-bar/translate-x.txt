@@ -1,0 +1,23 @@
+
+
+
+imagine you have a full width and height div if you want to have a sliding nav you might want to use translte
+
+translateX(0%) original position
+translateX(100%) move to right base on the original width
+
+when you run
+translateX(0%)
+translateX(-100%)
+ it will jump to 0% then -100%
+
+
+
+
+
+
+media screen and (max-width: 768px){
+    code here
+}
+if the screen reaches to 768px and lower the code will execute if min-width 768px and up 
+

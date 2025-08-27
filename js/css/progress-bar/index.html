@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+        .wrapper{
+            width: 400px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .progress{
+            width: 10px;
+            border-radius: 20px;
+            background-color: tomato;
+            height: 100%;
+            width: 1%;
+            transition: width 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="wrapper">
+        <div class="progress"></div>
+    </div>
+    
+
+    <script>
+        const progress = document.querySelector(".progress")
+        let progressCount = 10;
+
+        const timeID = setInterval(() => {
+            if(progressCount <= 100){
+                progress.style.width = `${progressCount}%`;
+                progressCount += 10;
+            }
+            else{
+                clearInterval(timeID)
+                console.log("done");
+            }
+        }, 500)
+
+    </script>
+</body>
+</html>
