@@ -1,0 +1,35 @@
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+        // variable is a reusable container for a value
+
+        // primitive data type = simple value stored directly in the memory (stack)
+        // reference data type = memory address (stack) that points 
+        
+        // primitive        reference
+        // int              String
+        // double           array
+        // char             object
+        // boolean
+
+
+        // 2 steps for creating a variable
+        // int age; //declaration
+        // age = 20;   //assignment
+
+
+        String name = "joshua";
+        char initial = 'A';
+        int age = 20;
+        double weight = 30.43;
+        boolean isActive = true;
+
+        System.out.println("hi my name is " + name + age + " years old" + weight + isActive + initial);
+
+
+
+    }
+}

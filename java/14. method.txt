@@ -1,0 +1,29 @@
+
+
+public class Main {
+
+
+
+    // basic usage of method
+    static void happyBirthday(){
+        System.out.println("happy birthday to you");
+    }
+
+    // this is a called overloading method/ the same method name
+    static void happyBirthday(String name){
+        System.out.println("happy birthday to you " + name);
+    }
+
+
+
+    public static void main(String[] args) {
+        
+        // method = a block of reusable code that is executed when called
+
+        String name = "joshua";
+        happyBirthday();
+        happyBirthday(name);
+
+
+    }
+}

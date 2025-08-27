@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+
+        // using string
+        System.out.print("Enter your name: ");
+        String name = input.nextLine();
+        
+        // using int
+        System.out.print("Enter your age: ");
+        int age = input.nextInt();
+        
+        // using character
+        System.out.print("Enter your middle initial: ");
+        char initial = input.next().charAt(0);
+        
+        // using boolean
+        System.out.print("Enter your isOnline: ");
+        boolean isOnline = input.nextBoolean();
+
+        // using double
+        System.out.print("Enter your weight: ");
+        double weight = input.nextDouble();
+
+
+        // printing all inputs
+        System.out.println("my name is " + name);
+        System.out.println("age: " + age);
+        System.out.println("middle initial: " + initial);
+        System.out.println("weight: " + weight);
+        System.out.println("isOnline: " + isOnline);
+
+        input.close();
+        
+
+    }
+}

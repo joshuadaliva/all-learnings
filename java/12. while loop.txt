@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+
+        Scanner scanner = new Scanner(System.in);
+
+
+        boolean start = true;
+        char letter;
+
+        while(start){
+            System.out.print("Enter a char: ");
+            letter = scanner.next().charAt(0);
+            if(letter == 'a'){
+                start = false;
+            }
+            else{
+                System.out.println(letter);
+            }
+            
+        }
+
+
+
+
+
+        scanner.close();
+        
+
+
+    }
+}

@@ -1,0 +1,26 @@
+import java.util.Random;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+        Random random = new Random();
+        
+        int generateRandomNo = random.nextInt(); 
+        System.out.println("This will generate number from -2 billion to positive 2 billion " + generateRandomNo);
+
+        // **** to fixed that you can specify the range
+        int generateRandomNo2 = random.nextInt(1,4);
+        System.out.println(generateRandomNo2);
+
+        // **** this will generate from 0.1 to 1
+        double generateRandomNo3 = random.nextDouble();
+        System.out.println(generateRandomNo3);
+
+        // **** this will generate either true or false
+        boolean generateRandomBool = random.nextBoolean();
+        System.out.println(generateRandomBool);
+
+    }
+}

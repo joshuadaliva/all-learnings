@@ -1,0 +1,19 @@
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+
+        // ternary operator = a shortcut for if else
+
+        // variable = (condition) : ifTrue : ifFalse;
+
+        int score = 65;
+
+        String passOrFail = (score > 65) ? "passed" : "failed";
+        System.out.println(passOrFail);
+
+
+    }
+}

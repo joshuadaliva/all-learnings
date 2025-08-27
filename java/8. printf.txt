@@ -1,0 +1,26 @@
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+        // printf = is a methods used to format an output
+
+        // %[flags][width][.precision][specifier-character]
+
+        String name = "Spongebob";
+        char firsLetter = 'S';
+        int age = 30;
+        double height = 60.5;
+        boolean isEmployed = true;
+
+        
+        System.out.printf("Hello %s\n", name);
+        System.out.printf("Your name starts width %c\n" , firsLetter);
+        System.out.printf("You are %d years old \n" , age);
+        System.out.printf("You are %f inches total \n", height);
+        System.out.printf("You are %b \n", isEmployed);
+
+
+    }
+}

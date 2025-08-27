@@ -1,0 +1,28 @@
+import java.lang.Math;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Math class
+        
+        // **** getting the pi
+        // System.out.println(Math.PI); 
+        
+        
+        double result;
+
+        // result = Math.pow(2,4); // raising number
+        // result = Math.abs(-5) // absolute number value
+        // result = Math.sqrt(9);
+        // result = Math.round(3.14); // round number to the nearest
+        // result = Math.ceil(3.14) //always round up
+        // result = Math.floor(3.14) //always round down
+        // result = Math.max(10,20); //find the largest number
+        // result = Math.min(10,20); //finds the lowest number
+        System.out.println(result);
+
+
+
+    }
+}

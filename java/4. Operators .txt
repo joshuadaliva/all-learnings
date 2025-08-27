@@ -1,0 +1,46 @@
+
+
+public class Main {
+
+    public static void main(String[] args) {
+        
+
+        // arithmetic operation
+        int x = 10;
+        int y = 2;
+        int z;
+
+        
+        // **** basic arithmetic 
+
+        // z = x + y; //addition
+        // z = x - y; //substraction
+        // z = x / y; //division
+        // z = x * y; //multiplication
+        // z = x % y; //modulo
+
+
+        // **** augmented assignment operator
+
+        // x + = y;
+        // x - = y;
+        // x * = y;
+        // x / = y;
+        // x % = y;
+
+
+        // **** increment and decrement operators
+
+        // x++; //increment by 1
+        // x--; //decrement by 1
+
+
+        // **** order of operations [P-E-M-D-A-S]
+
+        // double result = 3 + 4 * (7-5) / 2.0;
+        // System.out.println(result); // 7.0
+
+        
+
+    }
+}

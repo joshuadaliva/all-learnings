@@ -1,0 +1,18 @@
+
+public class Main {
+
+    public static void main(String[] args){
+
+        
+
+        // print the same line
+        System.out.print("Hello world");
+
+        // print in another line
+        System.out.println("Hello world");
+
+        // if you have a intellij type = so for System.out.println()
+        System.out.println();
+
+    }
+}

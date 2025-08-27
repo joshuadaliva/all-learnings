@@ -1,0 +1,33 @@
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // string methods
+
+        String name = "joshua daliva";
+
+        // int length = name.length(); //gets the length of a string
+        // char letter = name.charAt(0); //gets the first letter of a string
+        // int index = name.indexOf("a"); //gets the firs occurence of char or string
+        // int lastIndex = name.lastIndexOf("a"); //gets the last occurence of char or string
+        // name = name.toLowerCase(); //convert to upper case
+        // name = name.toUpperCase(); //convert to lower case
+        // name = name.trim(); //removes the space around the string
+        // name = name.replace("o", "a"); //replace a letter or sentence with another letter or sentence
+        // boolean isNone = name.isEmpty(); //checks if the string is empty
+        // boolean isContain = name.contains("joshua"); //checks if the string contains the value inserted
+        // boolean isEquals = name.equals("joshua"); //checks if the specified string is equals to the initialized string
+        
+        // substring - a methods used to extract a portion of a string 
+
+        String email = "dasds@gmail.com";
+        String username = email.substring(0, 6);
+
+        // more flexible
+        String username1 = email.substring(0, email.indexOf("@"));
+        System.out.println(username);
+
+    }
+}

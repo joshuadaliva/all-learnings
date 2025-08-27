@@ -1,0 +1,23 @@
+
+
+public class Main {
+
+
+    static double average(double... numbers){
+        double sum = 0;
+
+        for(double number: numbers){
+            sum+=number;
+        }
+
+        return sum/numbers.length;
+    }
+
+    public static void main(String[] args) {
+        // varargs = allows a methods to accept any number of arguments
+
+        System.out.println(average(2,5,2,3));
+
+
+    }
+}
