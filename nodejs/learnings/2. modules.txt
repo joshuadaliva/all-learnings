@@ -1,0 +1,87 @@
+
+
+
+// modules - is a building block in nodejs to orgranize code by creating a different reusable component
+// 2 module system include commonJS and Es modules
+// any file with .js is a module
+
+/*
+
+    core built in module
+
+    fs - file system operation
+    http  - http server and client
+    path - file path utilities
+    os - operating system util
+    events - event handling
+    util - util functions
+    stream - stream handling
+    crypto - crytographic functions
+    url - url parsing
+    queryString - url query string 
+
+    to use that you will use require("")
+
+    const http = require("http");
+
+    http.createServer((req, res) => {
+        res.writeHead(200, {
+            "content-type" : "text/html"
+        });
+
+        res.end("hello world");
+    }).listen(8080);
+
+*/
+
+
+----------commonJS
+
+function add(x, y){
+    return x + y;
+}
+
+function subtract(x, y){
+    return x - y;
+}
+
+
+// 1. exporting a single value / object
+module.exports = add
+const sum = require("./app.js")
+sum.add()
+
+// 2. exportin multiple values / object
+
+module.exports = {
+    add,
+    subtract
+}
+
+const {add, subtract} = require("./app");
+// or
+const math = require("./app")
+
+
+
+
+-------------- es module
+
+
+// enabling es module by .mjs file or setting the type inside the package.json as type:moduke
+
+// one by one export
+export function add(x , y){
+    return x + y;
+}
+
+export function subtract(x , y){
+    return x + y;
+}
+
+// multiple
+export {add, subtract}
+
+
+// importing
+import {add, subtract} from "./index"

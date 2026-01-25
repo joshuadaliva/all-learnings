@@ -1,0 +1,41 @@
+
+
+
+
+// nodejs - is a free open source tool that lets you run js code outside the browser
+// built on chomes v8 js engine - lets js executes run without browser, access os functionalities such as network, file etc
+// uses non-blocking io meaning you can run task while waiting for other task to finish
+// repl - read, evaluate, print, loop - a playground for nodejs
+// nodejs is designed for server side development while browser are for client side application
+/*
+
+    web server
+    rest api
+    real time application
+    working with files and databases
+    iot and hardware control
+
+*/
+
+/*
+
+    npm init - initialize a new project
+    npm install - install dependencies
+    npm update - update packages
+    npm audit - check for vuln
+
+*/
+
+/*
+
+    client sends request
+    the request is in event queue
+    the event loop takes every request in event queue then processess it
+
+    this makes nodejs suitable for realtime 
+
+
+*/
+
+
+
