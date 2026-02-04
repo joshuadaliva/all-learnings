@@ -1,0 +1,32 @@
+
+
+// package.json - describes your projects and contains information about projectName, version, dependencies and scripts
+// when you run npm install packageName it is added to dependency
+
+// 1. creating a package.json - npm init
+// 2. for default values use - npm init -y
+
+
+
+
+// npm scripts - are commands you define inside your package.json file
+// use to automate process such as running the app, testing, building, cleaning up files
+    /*
+        "scripts": {
+            "test": "echo \"Error: no test specified\" && exit 1",
+            "takbo": "node app.js"
+        }
+    */
+    
+    
+    
+// dependency management - process of tracking, installing, updating and removing package in the project ensures that application is stable, secure and maintanable
+// always commit your lock files to version control to esure consistem installtions
+
+// 1. ^2.8.1 - any with 2.x.x, only major version must match 2.8.1 or higer
+// 2. ~2.8.1 - any with 2.8.x, only major.minor must match
+// 3. * any version
+// 4. >=2.8.1 - version 2.8.1 or higher 
+
+// installing all dependencies inside the package.json - npm install
+// installing specific dependencies - npm install packaeName

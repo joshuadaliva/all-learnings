@@ -1,0 +1,19 @@
+
+
+// NPM - is a package manager in nodejs 
+// npmjs has a thousand packages to download
+// if you installed nodejs npm is read to run inside your computer
+
+// package - contains all files need for a module
+// module - is a library you can include in your code or project
+
+
+// 1. download a package - npm install packageName
+// 2. using the package - require("packageName")
+// 3. install package globally - npm install -g packageName
+// 4. update a package - npm update packageName
+// 5. check for oudated - npm outdated
+// 6. uninstall a package - npm uninstall packageName
+
+// 7. npm audit - check for vuln 
+// 8. npm audit fix - fix vuln
